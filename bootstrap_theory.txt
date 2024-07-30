@@ -1,0 +1,195 @@
+1)Registration form
+2)login form
+3)product page - index page
+ - user can see all products
+ - filters [ product category,price range,sort]
+
+4)product detail page
+5)cart age
+6)place order page
+7)About us page
+8)contact page
+
+asset folder - 
+    - css folder 
+    - js folder
+    - images folder
+
+Bootstrap is a css framework
+it is a frontend framework
+
+Bootstrap is compiled css file which contains predefined classed
+that can be used on html elements to make good looking user interface.
+
+id, class selector
+.classname{
+
+}
+
+<h1 class="____">content</h1>
+
+Bootstrap provides grid structure
+
+browser is divided into rows and columns
+Intersection of rows and columns forms grid structure.
+
+|----|----|----|----|----|----|----|
+|----|----|----|----|----|----|----|
+|----|----|----|----|----|----|----|
+|----|----|----|----|----|----|----|
+|----|----|----|----|----|----|----|
+
+with the help of grid structure HTML elements can be placed properly
+at exact location on the browser.
+
+Bootstrap provides 12 columns grid structure.
+Means entire browser screen is divided into 12 columns.
+
+linking bootstrap in project
+-----------------------------
+1)online -CDN [content delivery network]
+2)offline
+
+Breakpoints
+===========
+
+4 products in row ------> layout1
+1 product in row  ------>layout2
+
+Responsive web page: layout or structure of webpage changes as per the
+devise screen width
+
+Breakpoint
+
+screen width in pixel at which layout of web page changes from one 
+form to another is called as breakpoint.
+                                768px
+<--------------------------------><----------->
+if screen width is greater than 768px, layout 1 is applied.
+if screen width is below 768px, then layout 2 is applied.
+
+Breakpoint	      Class infix	Dimensions  range
+Extra small	        None	    <576px     0px to <576px
+Small	            sm	        ≥576px     ≥576px to <768px
+Medium	            md	        ≥768px     ≥768px to <992px   
+Large	            lg	        ≥992px     ≥992px to <1200px  
+Extra large	        xl	        ≥1200px    ≥1200px to <1400
+Extra extra large	xxl	        ≥1400px    ≥1400px and above
+
+container
+=========
+Types of selectors
+
+id selector -> #idname{}
+tag selector -> h1{}
+class selector ->  .classname{}
+
+.container
+.container-breakpoint   => sm, md,lg,xl,xxl
+.container-fluid
+
+<------------------------>below 576 screen width
+|---learning container---|   100%
+
+<--------------------------------> >=576   <768
+ 18 |----------------------|18   540    margin ->36
+
+ container
+  - row
+    - col
+
+1 element width= 12 col width
+<-------------------------------------->12 col width
+<------------col----------------------->
+
+2 elements
+width of 1 element =12/2 => 6 col width
+<------------------------------------->
+<------col------><-------col--------->
+
+3 elements 
+width of 1 element = 12/3 = 4 col width
+<------------------------------------->
+<-----------><-----------><----------->
+
+<-------------------col-12--------------------->
+<--><--><--><--><--><--><--><--><--><--><--><-->
+<---------------col --------------------------->
+<---------col---------><---------col----------->
+<--------------><--------------><-------------->
+<----------><----------><----------><---------->
+
+col-1  <-->
+col-2  <--><-->
+col-3  <--><--><-->
+.
+.
+.
+.
+col-12
+
+margin -> outer space
+padding -> internal space
+
+margin           m
+padding          p
+margin-top       mt
+margin-bottom    mb
+margin-left      ms
+margin-right     me
+padding-top      pt
+padding-bottom   pb
+padding-left     ps
+padding-right    pe
+
+margin x-axis    mx   [ms and me]
+margin y-axis    my   [mt and mb]
+
+spacing -> 1,2,3,4,5
+eg: mb-4
+
+auto that is applicable on mx,ms,me
+
+home page- product page
+-----------------------
+Navigation breakpoint
+Home About Cart Contact Login  Register logout
+-------------------------------------------------
+
+bootstrap contains navbar
+
+<-------------screen width----------------------->
+<-------------------navbar----------------------->
+            col-md-12
+
+<---filter----><------------product--------------->
+    col-md-4                col-md-8
+               <---------------------------------->12 columns
+               <----------><----------><---------->
+                col-md-4    col-md-4    col=md-4
+
+footer
+------
+<---------------------row---------------------->12 cols
+<------------><-col-md-4-----><---------------->
+    Address      quick links        contact us
+
+product details page
+-------------------------
+navbar
+main content
+footer
+
+<-----------------row---------------------->
+<--------------------><-------------------->
+ col-md-6               col-md-6
+ image                 product detail
+
+ cart page
+
+ <---------row--------------------------->
+ <------col-md-9---------><---col-md-3-->
+    customer details         total amount
+    products details
+<------------><----------> nesting
+col-md-6       col-md-6

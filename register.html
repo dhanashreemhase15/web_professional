@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 shadow mt-4 p-4 mx-auto">
+                <h2 class="text-center">Registration</h2>
+                <form method="POST" action="login.html">
+                    <div class="mb-3">
+                        <label for="input1" class="form-label"><strong>Username:</strong></label>
+                        <input type="email" class="form-control" id="input1" placeholder="Enter username">
+                    </div> <!-- username end-->
+                    <div class="mb-3">
+                        <label for="input2" class="form-label"><strong>Password:</strong></label>
+                        <input type="password" class="form-control" id="input2" placeholder="Enter password">
+                    </div> <!-- password end-->
+                    <div class="mb-3">
+                        <label for="input3" class="form-label"><strong>Confirm Password:</strong></label>
+                        <input type="password" class="form-control" id="input3" placeholder="Enter Password Again">
+                    </div> <!-- confirm password end-->
+                    <div class="mb-3">
+                        <input type="submit" class="btn btn-danger" value="Register" />
+                        Already user? <a href="login.html">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/main.js"></script>
+</body>
+</html>
